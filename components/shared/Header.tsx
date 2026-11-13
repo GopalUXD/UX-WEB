@@ -33,10 +33,10 @@ const menuItems: MenuItem[] = [
   { label: "トップ", href: "/" },
   {
     label: "ニュース",
-    href: "/news",
+    href: "/category",
     children: [
-      { label: "お知らせ", href: "/news/information" },
-      { label: "展示会", href: "/news/event" },
+      { label: "お知らせ", href: "/category/information" },
+      { label: "展示会", href: "/category/event" },
     ],
   },
   {
