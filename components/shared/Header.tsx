@@ -125,16 +125,16 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50 border-b bg-background/90 backdrop-blur">
-      <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6">
+      <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-4 sm:px-6">
         {/* Left: company logo */}
         <Link href="/" className="flex items-center" onClick={closeMobile}>
           <Image
             src="/ux-logo.png"
             alt="ux logo"
-            width={160}
-            height={40}
+            width={240}
+            height={60}
             priority
-            className="h-8 w-auto"
+            className="h-12 w-auto"
           />
         </Link>
 

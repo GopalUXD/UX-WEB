@@ -10,7 +10,7 @@ type Slide = {
   subtitle?: string;
 };
 
-// 3 banner images. Put the files in /public/banners/
+// 3 banner images. Put the files in /public/
 const slides: Slide[] = [
   { src: "/banner-1.png", alt: "Banner 1" },
   { src: "/banner-2.png", alt: "Banner 2" },
@@ -19,10 +19,12 @@ const slides: Slide[] = [
 
 const INTERVAL_MS = 5000; // time each slide stays
 
-// Real pixel size of your banner images (all 3 should have the same size).
-// The banner height follows this ratio, so nothing is cropped or zoomed.
+// Ratio of your banner images (width / height).
+// Every slide gets this same ratio, so the banner height is always the same
+// and no gap appears below a shorter image.
+// Example: images exported at 1920 x 400 -> 1920 / 400.
 const BANNER_WIDTH = 1920;
-const BANNER_HEIGHT = 600;
+const BANNER_HEIGHT = 400;
 
 export default function Banner() {
   const [index, setIndex] = useState(0);
@@ -74,15 +76,15 @@ export default function Banner() {
             aria-label={`${i + 1} of ${slides.length}`}
             aria-hidden={i !== index}
             className="relative w-full shrink-0"
+            style={{ aspectRatio: `${BANNER_WIDTH} / ${BANNER_HEIGHT}` }}
           >
             <Image
               src={slide.src}
               alt={slide.alt}
-              width={BANNER_WIDTH}
-              height={BANNER_HEIGHT}
+              fill
               sizes="100vw"
               priority={i === 0}
-              className="block h-auto w-full"
+              className="object-cover"
             />
 
             {(slide.title || slide.subtitle) && (
