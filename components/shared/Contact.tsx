@@ -44,7 +44,7 @@ const items: Item[] = [
 export default function Contact() {
   return (
     <>
-      <div className="mx-auto max-w-5xl px-4 pb-24 pt-10 sm:px-6">
+      <div className="mx-auto max-w-7xl px-4 pb-24 pt-10 sm:px-6">
         <div className="max-w-173.25">
           <ul className="mt-10 divide-y divide-blue-800 dark:divide-blue-400">
             {items.map((item) => (

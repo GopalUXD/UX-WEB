@@ -427,7 +427,7 @@ export default function NewsPage({ page = 1, perPage = 10 }: NewsPageProps) {
 
   return (
     <>
-      <div className="mx-auto grid max-w-5xl grid-cols-1 gap-12 px-4 py-10 sm:px-6 lg:grid-cols-[minmax(0,1fr)_260px] lg:gap-14">
+      <div className="mx-auto grid max-w-7xl grid-cols-1 gap-12 px-4 py-10 sm:px-6 lg:grid-cols-[minmax(0,1fr)_260px] lg:gap-14">
         <main>
           <h1 className="sr-only">ニュース</h1>
           {pagePosts.map((post) => (

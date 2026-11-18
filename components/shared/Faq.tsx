@@ -98,7 +98,7 @@ function toTabs(section: Section): FaqTab[] {
 export default function Faq() {
   return (
     <>
-      <div className="mx-auto max-w-5xl px-4 pb-24 pt-8 sm:px-6">
+      <div className="mx-auto max-w-7xl px-4 pb-24 pt-8 sm:px-6">
         <h1 className="text-2xl font-bold text-neutral-800">
           ソリューションから探す
         </h1>

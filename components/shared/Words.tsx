@@ -219,7 +219,7 @@ export default function Words() {
     <>
       <Breadcrumb items={[{ label: "トップ", href: "/" }, { label: "用語" }]} />
 
-      <div className="mx-auto max-w-5xl px-4 pb-20 pt-8 sm:px-6">
+      <div className="mx-auto max-w-7xl px-4 pb-20 pt-8 sm:px-6">
         <h1 className="text-center text-4xl font-bold text-neutral-800">
           用語
         </h1>

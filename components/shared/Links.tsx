@@ -137,7 +137,7 @@ export default function Links() {
           key={group.title}
           className={cn(group.grey && "bg-[#f4f6f8] mb-4")}
         >
-          <div className="mx-auto max-w-5xl px-4 py-4 sm:px-6">
+          <div className="mx-auto max-w-7xl px-4 py-4 sm:px-6">
             <div className="max-w-220">
               {group.showTitle && (
                 <h2 className="mb-10 text-center text-3xl font-bold text-neutral-900 dark:text-neutral-100">

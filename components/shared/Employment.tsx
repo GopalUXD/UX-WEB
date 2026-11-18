@@ -37,9 +37,9 @@ const items: Item[] = [
 export default function Employment() {
   return (
     <>
-      <div className="mx-auto max-w-5xl px-4 pb-24 pt-10 sm:px-6">
+      <div className="mx-auto max-w-7xl px-4 pb-24 pt-10 sm:px-6">
         <div className="max-w-[693px]">
-          <ul className="mt-10 divide-y divide-blue-800 dark:divide-blue-400">
+          <ul className="mt-10 divide-y divide-blue-800">
             {items.map((item) => (
               <li
                 key={item.href}

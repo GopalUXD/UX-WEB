@@ -78,7 +78,7 @@ const sections: Section[] = [
 export default function Company() {
   return (
     <>
-      <div className="mx-auto max-w-5xl px-4 pb-24 pt-8 sm:px-6">
+      <div className="mx-auto max-w-7xl px-4 pb-24 pt-8 sm:px-6">
         <h1 className="sr-only">企業情報</h1>
 
         <div className="max-w-3xl space-y-10">
