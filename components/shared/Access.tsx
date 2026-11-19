@@ -70,11 +70,11 @@ export default function Access() {
               title={`${COMPANY_NAME} Facebook`}
               src={facebookSrc}
               width={340}
-              height={130}
+              height={600}
               loading="lazy"
               scrolling="no"
-              allow="encrypted-media"
-              className="block border-0"
+              allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+              className="block w-full border-0"
             />
           </div>
         </div>

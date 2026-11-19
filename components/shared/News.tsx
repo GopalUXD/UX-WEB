@@ -56,7 +56,7 @@ export default function News() {
               <article>
                 <h3 className="text-lg leading-snug">
                   <Link
-                    href={`/news/${item.id}`}
+                    href={`/category/event/${item.id}`}
                     className="text-sky-500 hover:underline focus-visible:underline dark:text-sky-400"
                   >
                     {item.title}
